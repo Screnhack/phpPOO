@@ -14,7 +14,6 @@ class estudiantesController {
 		$this->seccion  = new Seccion();
 	}
 	public function index(){
-		//echo "Hola estoy aki";
 		$datos = $this->estudiante->listar();
 		return $datos;
 	}

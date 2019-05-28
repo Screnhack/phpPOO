@@ -33,7 +33,7 @@ class Estudiante {
     }
     public function add(){
         $sql = "INSERT INTO estudiantes (id, name, age, promedio, imagen, id_seccion, fecha)
-        VALUES (null, '{$this->name}','{$this->age}', '{$this->promedio}','{$this->imagen}','{$this->idSeccion}',NOW())";
+        VALUES (null, '{$this->name}','{$this->age}', '{$this->promedio}','{$this->imagen}','{$this->id_seccion}',NOW())";
         $this->con->consultSimple($sql);
     }
     public function delete(){
@@ -41,7 +41,7 @@ class Estudiante {
         $this->con->consultSimple($sql);
     }
     public function edit(){
-        $sql = "UPDATE estudiantes SET name = '{$this->name}', age = '{$this->age}', promedio = '{$this->promedio}' , id_seccion = '{$this->idSeccion}' WHERE id = '{$this->id}'";
+        $sql = "UPDATE estudiantes SET name = '{$this->name}', age = '{$this->age}', promedio = '{$this->promedio}' , id_seccion = '{$this->id_seccion}' WHERE id = '{$this->id}'";
         $this->con->consultSimple($sql);
     }
     public function view(){

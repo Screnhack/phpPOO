@@ -16,10 +16,10 @@
 							while($row = mysqli_fetch_array($datos)){ ?>
 								<tr>
 								<td scope="row"><?php echo $row['id'];?></td>
-								<td scope="row"><?php echo $row['name']?></td>
-								<td scope="row"><?php echo $row['age']?></td>
-								<td scope="row"><?php echo $row['promedio']?></td>
-								<td scope="row"><a class="btn btn-primary" href="<?php echo URL ?>estudiantes/edit/<?php echo $row['id']?>">Editar</a> <a class="btn btn-danger" href="<?php echo URL ?>estudiantes/destroy/<?php echo $row['id']?>" >Eliminar</a></td>
+								<td scope="row"><?php echo $row['name'];?></td>
+								<td scope="row"><?php echo $row['age']; ?></td>
+								<td scope="row"><?php echo $row['promedio'];?></td>
+								<td scope="row"><a class="btn btn-primary" href="<?php echo URL; ?>estudiantes/edit/<?php echo $row['id'];?>">Editar</a> <a class="btn btn-danger" href="<?php echo URL; ?>estudiantes/destroy/<?php echo $row['id'];?>" >Eliminar</a></td>
 								</tr>
 						<?php	}
 						?>
